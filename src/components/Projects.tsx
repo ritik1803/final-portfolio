@@ -1,53 +1,64 @@
 import React, { useState, useEffect } from 'react';
 import { ChevronLeft, ChevronRight, X, ExternalLink, Play } from 'lucide-react';
 
-// Sample projects data with placeholder images (using API placeholder instead of external URLs)
+// Updated projects data with real content
 const projects = [
   {
     title: "Brand Identity Design",
-    description: "Complete brand identity including logo, color palette, and guidelines",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"],
+    description: "Complete brand identity including logo, color palette, and brand guidelines for a modern tech startup.",
+    imgUrl: "https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg",
+    mediaUrls: [
+      "https://images.pexels.com/photos/1037992/pexels-photo-1037992.jpeg",
+      "https://images.pexels.com/photos/1037995/pexels-photo-1037995.jpeg",
+      "https://images.pexels.com/photos/1037999/pexels-photo-1037999.jpeg"
+    ],
     category: "Complete Branding",
     isVideo: false
   },
   {
     title: "Social Media Campaign",
-    description: "Engaging social media graphics and animations",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600", "/api/placeholder/800/600"],
+    description: "Engaging social media graphics and animations for a fitness brand's summer campaign.",
+    imgUrl: "https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg",
+    mediaUrls: [
+      "https://images.pexels.com/photos/3277808/pexels-photo-3277808.jpeg",
+      "https://images.pexels.com/photos/3277920/pexels-photo-3277920.jpeg"
+    ],
     category: "Graphic Design",
     isVideo: false
   },
   {
     title: "Corporate Video",
-    description: "Professional company overview video",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600"],
+    description: "Professional company overview video showcasing products and services.",
+    imgUrl: "https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg",
+    mediaUrls: ["https://images.pexels.com/photos/3379934/pexels-photo-3379934.jpeg"],
     category: "Video Editing",
     isVideo: true
   },
   {
     title: "Logo Collection",
-    description: "Modern and minimalist logo designs",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600", "/api/placeholder/800/600", "/api/placeholder/800/600"],
+    description: "Modern and minimalist logo designs for various clients across different industries.",
+    imgUrl: "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg",
+    mediaUrls: [
+      "https://images.pexels.com/photos/4348404/pexels-photo-4348404.jpeg",
+      "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg",
+      "https://images.pexels.com/photos/4348403/pexels-photo-4348403.jpeg"
+    ],
     category: "Logo Design",
     isVideo: false
   },
   {
     title: "Product Brochure",
-    description: "Elegant product catalog design",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600"],
+    description: "Elegant product catalog design for a luxury furniture brand.",
+    imgUrl: "https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg",
+    mediaUrls: ["https://images.pexels.com/photos/4348401/pexels-photo-4348401.jpeg"],
     category: "Brochures",
     isVideo: false
   },
   {
     title: "Motion Graphics",
-    description: "Dynamic animated content",
-    imgUrl: "/api/placeholder/800/600",
-    mediaUrls: ["/api/placeholder/800/600"],
+    description: "Dynamic animated content for digital advertising campaigns.",
+    imgUrl: "https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg",
+    mediaUrls: ["https://images.pexels.com/photos/5473955/pexels-photo-5473955.jpeg"],
     category: "Video Editing",
     isVideo: true
   }
@@ -366,3 +377,5 @@ export const Projects = () => {
 };
 
 export default Projects;
+
+export { Projects }
